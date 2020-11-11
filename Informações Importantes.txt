@@ -60,3 +60,10 @@ Abrir cmd, cd + caminho da pasta, comando git remote add origin https://github.c
 07 - Adicionar o nome que aparecerá ao fazer as alterações e todas as manipulações no git:
 
 git config --global user.name "Johnny Garcêz"
+pode-se usar o mesmo comando para setar o e-mail
+git config --global user.email "johnnygarcez@hotmail.com"
+
+08 - Para atualizar a pasta local com as alterações feitas no repositório remoto:
+
+git pull origin master (Onde master é a branch)
+Lembrando que é preciso estar com a pasta selecionada no terminal. 
