@@ -1,0 +1,62 @@
+Arquivos:
+
+01 - Arquivo de configuração do APACHE:
+--> HTTPD.CONF <-- 
+
+02 - Arquivos de configuração do PHP:
+--> PHP.INI <--
+______________________________________________________________________________
+
+Portas:
+
+01 - As portas reservadas para a ultilização do Apache são:
+Porta 80 para HTTP
+Porta 443 para HTTPS
+______________________________________________________________________________
+
+Servidor:
+
+01 - Acesso ao servidor local: A pasta usada pelo servidor é: "C:\xampp\htdocs".
+______________________________________________________________________________
+
+Acesso:
+
+01 - Para acessar a pasta "Curso PHP Udemy" no browser:
+localhost/curso%20php%20udemy/nomedoarquivo.php
+OU
+127.0.0.1/curso%20php%20udemy/nomedoarquivo.php
+
+______________________________________________________________________________
+
+Atalhos:
+01 - Para exibir o código fonte da página no browser:
+CTRL + U
+
+______________________________________________________________________________
+
+Git:
+
+Clonar repositórios no GIT:
+01 - Clicar com botão direito na pasta onde será clonado o rapositório do Git e 
+clicar em "Git batch here", no terminal usar o comando "git clone URL".
+
+02 - Para receber o clone do repositório com o nome que se deseja é só dar espaço 
+após o comando de clone e digitar o nome que será gravado no repositório.
+
+03 - Para tornar uma pasta qualquer um repositório git, basta abrir o cmd, copiar o caminho da pasta na barra de endereços, dar um cmd de "cd" na pasta e após isso usar o cmd "git init", isso irá criar uma pasta oculta .git que será a prova de que a operação foi bem sucedida.
+
+04 - Comandos de inserção do git:
+
+Para inclusão de arquivo único no stage área - git add nomedoarquivo.extensão
+Para inclusão de todos os arquivos no stage área - git add --all
+Para confirmar as alterações feitas nos arquivos - git commit -m "Alterei o Projeto" (OBS: se for uma palavra única não precisa de aspas.
+
+05 - Meu repositório github - https://github.com/jgarcez763/php.git
+
+06 - Para adicionar uma pasta ao repositório do git:
+
+Abrir cmd, cd + caminho da pasta, comando git remote add origin https://github.com/jgarcez763/php.git
+
+07 - Adicionar o nome que aparecerá ao fazer as alterações e todas as manipulações no git:
+
+git config --global user.name "Johnny Garcêz"
