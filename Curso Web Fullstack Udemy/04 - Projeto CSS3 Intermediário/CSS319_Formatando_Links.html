@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+
+		<head>
+		
+		<title>Formatando Links</title> 
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+		a{
+			padding: 5px 10px;
+			text-decoration: none; /* Para remover o underline automático dos links */
+		}
+
+		/* Links não visitados */
+		a:link{
+			color: #b9c941;
+		}
+
+		/* Links já visitados */
+		a:visited{
+			color: #c0c0c0;
+		}
+
+		/* Passando o cursos sobre o link */
+		a:hover{
+			color: #fff; 
+			background: #6d790f; /* Aplica um fundo verde escuro enquanto a letra recebe a cor branca quando o cursor passar sobre */
+		}
+
+		/* Ativos, quando clicados */
+		a:active{
+			color: #e4f371;
+		}
+
+		/* É preciso manter essa ordem de formatação: a:link; | a:visited; | a:hover; | a:active; /*
+		/* É possível formatar em conjunto aplicando um mesmo padrão para mais de um a:, seguindo o exemplo: a:link, a:visited{}. */
+
+		</style>
+
+		</head>
+
+
+		<body>
+
+		<a href="https://google.com.br"> Google </a> |
+		<a href="https://tecmundo.com.br"> Tec Mundo </a> |
+		<a href="https://megacurioso.com.br"> Megacurioso </a> |
+		<a href="https://facebook.com"> Facebook </a>
+
+		</body>
+
+</html>

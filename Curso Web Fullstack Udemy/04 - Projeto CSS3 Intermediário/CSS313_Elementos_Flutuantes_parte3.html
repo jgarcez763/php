@@ -1,0 +1,129 @@
+<!doctype html>
+
+<html>
+
+		<head>
+		
+		<title>Elementos Flutuantes</title> 
+		<meta charset="utf-8">
+		<style type="text/css">/*Estilo CSS inline*/
+
+			.conteudo{
+				background: blue;
+				border: 1px solid gray;
+				width: 150px;
+				height: 150px;
+			}
+
+			.conteudofloatleft{
+				background: purple;
+				border: 1px solid gray;
+				width: 150px;
+				height: 150px;
+				float: left;
+			}
+
+			.conteudofloatright{
+				background: navy;
+				border: 1px solid gray;
+				width: 150px;
+				height: 150px;
+				float: right;
+				margin: 10px;
+			}
+
+			.clear{
+				clear: both; /*É possível aplicar 4 atributos em clear: right, left, none e both, para limpar o float na direita, esquerda, nada e ambos.*/
+			}
+
+			.div01{
+				border: 5px solid red;
+				background: green;
+			}
+
+		/*Comentário CSS3*/		
+
+		</style>
+
+		</head>
+
+
+		<body>
+		
+			<h1 align="center">Utilização do Clear Parte 2</h1>
+
+			<div align="center">
+				
+				<a href="CSS313_Elementos_Flutuantes.html">Elementos Flutuantes</a>&nbsp;|&nbsp;
+				<a href="CSS313_Elementos_Flutuantes_parte2.html">Elementos Flutuantes Pt 2</a>&nbsp;|&nbsp;
+				<a href="CSS313_Elementos_Flutuantes_parte3.html">Elementos Flutuantes Pt 3</a>
+
+			</div><br>
+
+		<div class="div01">
+
+			<div class="conteudo">
+			Conteúdo01
+			</div>
+
+			<div class="conteudo">
+			Conteúdo02
+			</div>
+
+			<div class="conteudo">
+			Conteúdo03
+			</div>
+
+		</div><br>
+
+		<div class="conteudofloatleft">
+		Conteúdo01
+		</div>
+
+		<div class="conteudofloatleft">
+		Conteúdo02
+		</div>
+
+		<div class="conteudofloatleft">
+		Conteúdo03
+		</div>
+
+		<div class="div01"><!--A div não recebeu os valores da classe por conta dos elementos que estão em float, é possível perceber que a formatação da classe "div02" está atuante através de uma ponta da borda vermelha, para corrigir esse problema, basta criar uma div vazia e aplicar o comando de "clear".-->
+
+			<div class="conteudofloatright">
+			Conteúdo01
+			</div>
+
+			<div class="conteudofloatright">
+			Conteúdo02
+			</div>
+
+			<div class="conteudofloatright">
+			Conteúdo03
+			</div>
+
+		</div>
+		
+		<br><br><br><br><br><br><br><br><br><br>
+		
+		<div class="div01">
+
+			<div class="conteudofloatright">
+			Conteúdo01
+			</div>
+
+			<div class="conteudofloatright">
+			Conteúdo02
+			</div>
+
+			<div class="conteudofloatright">
+			Conteúdo03
+			</div>
+
+			<div class="clear"></div><!--Esta div com clear, permite a correta função dos valores da classe "div01"-->
+
+		</div>
+
+		</body>
+
+</html>

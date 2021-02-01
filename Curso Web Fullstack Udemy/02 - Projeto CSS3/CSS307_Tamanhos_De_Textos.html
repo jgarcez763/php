@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html>
+
+		<head>
+		
+		<title>Tamanhos De Textos</title> 
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+		/*Existem 3 formas de modificar o tamanho dos textos, são elas:
+		px --> Atribui um tamanho fixo ao texto.
+		% ---> Atribui um tamanho relativo. 
+		em --> Atribui um valor relativo com base no container pai.
+		OBS: O tamanho padrão dos textos é de 16px;*/
+
+		.texto{
+			font-size: 32px;
+		}
+
+		.texto2{
+			font-size: 1em;
+		}
+
+		.texto3{
+			font-size: 2em;
+		}
+
+		.texto4{
+			font-size: 1.7em;/*É possível atribuir valores decimais em "em", 0.5, 2.9... etc.*/
+		}
+
+		div{
+			font-size: 250%;
+		}
+
+		</style>
+
+		</head>
+
+
+		<body>
+
+
+			<div>
+				
+				<p class="texto">Conteúdo01</p>
+				<p>Conteúdo02</p>
+				<p class="texto">Conteúdo03</p>
+				<p>Conteúdo04</p>
+				<p class="texto2">Conteúdo05</p><!--O tamanho do texto com o uso de "1em" não alterou em nada com relação aos 250% da atribuição da div que é o container pai-->
+				<p class="texto3">Conteúdo06</p><!--Já neste exemplo, a aplicação de "2em" na classe "texto3" dobrou o valor de 250% do container pai.-->
+				<p class="texto4">Conteúdo07</p>
+			</div>
+		<!--Comentário HTML5-->
+
+		</body>
+
+</html>

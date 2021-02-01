@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html>
+
+
+
+	<head>
+
+		<title>Página de Contatos</title>
+		<meta charset="utf-8">
+
+	</head>
+
+	<body>
+
+		<table border="2"><!--O comando border, faz com que haja uma borda, e a definição do número descrito é expressa em pixel-->
+
+			<tr><!--tr, vem do inglês, que significa "Table Row" ou linha da tabela-->
+				
+				<td>aa</td><!--td, ou "Table Data", é a estrutura que dá forma ao dado da tabela-->
+				<td>bb</td>
+				<td>cc</td>
+				<td>dd</td>
+
+			</tr>
+			
+			<tr>
+				
+				<td>ee</td>
+				<td>ff</td>
+				<td>gg</td>
+				<td>hh</td>
+
+			</tr>
+
+		</table>
+
+		<h2>Outra Forma de exibição de uma tabela:</h2>
+
+			<table border="2" width="500"><!--Width, vai definir a largura da tabela. OBS: a largura pode ser definida tanto em pixels(Representada apenas pelo definição do número, nesse caso "500", ou pode ser por percentual(Representado por "500%") que irá se ajustar ao percentual da página do navegador.-->
+			
+				<h2>Produtos:</h2>
+
+			<tr>
+				
+				<th>Código</th><!--O comando TH ou "Table Header" que significa cabeçalho da tabela, faz com que haja diferênciação na apresentação dos dados, eles mudam sua fonte para negrito e ficam centralizados-->
+				<th>Produto</th>
+				<th>Preço</th>
+				<th>Loja</th>
+
+			</tr>
+			
+			<tr>
+				
+				<td>001</td>
+				<td>Notebook <img src="imagens/Notebook.jpg" width="200"></td><!--É possível a inserção de imagens dentro de uma tabela, aqui neste exemplo, a imagens "Notebook.jgp" está sendo exibida com a largura de 200 pixels-->
+				<td>2,599</td>
+				<td>Casas Bahia</td>
+
+			</tr>
+
+			<tr>
+				
+				<td>002</td>
+				<td>Desktop<br><a href="">Clique aqui</a></td><!--Assim como há possibilidade de inserir imagens, há tbm como inserir links em tabelas-->
+				<td>1,999</td>
+				<td>Casas Bahia</td>
+				
+			</tr>
+
+			<tr>
+				
+				<td rowspan="2"><!--rowspan do inglês "Row espansion" Ou "Extensão da linha"-->Desconto</td>
+				<td colspan="3"><!--Colspan do inglês "Colum espansion" Ou "Extensão da coluna"-->Cupom1 -R$10,00</td>
+				
+			</tr>
+
+				<tr>
+			
+				<td colspan="3">Cupom2 -R$12,00</td>
+				
+			</tr>
+
+			<tr>
+				<td>Total:</td>
+				<td colspan="3">R$ 4.576,00</td>
+
+			</tr>
+
+		</table>
+
+
+	</body>
+
+
+	</html>

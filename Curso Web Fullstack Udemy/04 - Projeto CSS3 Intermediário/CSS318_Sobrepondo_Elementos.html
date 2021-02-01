@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html>
+
+		<head>
+		
+		<title>Sobrepondo Elementos</title> 
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+		.conteúdo1{
+			border: 1px solid red;
+			background: orange;
+			height: 200px;
+			width: 200px;
+			position: absolute;
+			z-index: 2; /*Está é a função responsável por sobrepor a ordem em que os elementos são mostrados na tela, quanto maior o número mais a frente ele está*/
+		}
+
+		.conteúdo2{
+			border: 1px solid red;
+			background: green;
+			height: 200px;
+			width: 200px;
+			top: 80px;
+			left: 80px;
+			position: absolute;
+			z-index: 1; /*Por receber valor "0" este elemento ficará atrás do que recebeu 1*/
+		}
+
+		.conteúdo3{
+			border: 1px solid red;
+			background: yellow;
+			height: 200px;
+			width: 200px;
+			top: 160px;
+			left: 160px;
+			position: absolute;
+			z-index: 0;
+		}
+
+		.conteúdo4{
+			border: 1px solid red;
+			background: orange;
+			height: 200px;
+			width: 200px;
+			right: 10px;
+			position: absolute;
+			z-index: 2; /*Por receber valor "1" este elemento ficará à frente do que recebeu 0*/
+		}
+
+		.conteúdo5{
+			border: 1px solid red;
+			background: green;
+			height: 200px;
+			width: 200px;
+			top: 80px;
+			right: 80px;
+			position: absolute;
+			z-index: 1;
+		}
+
+		.conteúdo6{
+			border: 1px solid red;
+			background: yellow;
+			height: 200px;
+			width: 200px;
+			top: 160px;
+			right: 160px;
+			position: absolute;
+			z-index: 1;
+		</style>
+
+		</head>
+
+
+		<body>
+
+		<div class="conteúdo1">
+			Conteúdo 1
+		</div>
+
+		<div class="conteúdo2">
+			Conteúdo 2
+		</div>
+
+		<div class="conteúdo3">
+			Conteúdo 3
+		</div>
+
+		<div class="conteúdo4">
+			Conteúdo 4
+		</div>
+
+		<div class="conteúdo5">
+			Conteúdo 5
+		</div>
+
+		<div class="conteúdo6">
+			Conteúdo 6
+		</div>
+
+		</body>
+
+</html>

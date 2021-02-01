@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html>
+
+		<head>
+		
+		<title>Posicionamento Estático e Relativo</title> 
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+		body{
+			background: #007fc7;
+		}
+		
+		#container{
+			background: #fff;
+			width: 800px;
+			margin: 10px 80px auto;/*Esse "auto" serve para centralizar o container, isso se aplica aos casos de manipulação de extensão ou encolhimento da janela.*/
+			padding: 10px;
+		}	
+
+		h1{
+
+		}
+
+		p{
+			width: 300px;
+		}
+
+		.relative{
+			border: 1px solid red;
+			position: relative; 
+			top: 10px;	
+			left: 500px;		
+		}
+
+		.relative2{
+			border: 1px solid red;
+			position: relative;
+			top: -30px;
+			right: -500px; /*Valores negativos aplicam os efeitos inversos aos valores positivos, enquanto "right 500px" deveria levar o paragrafo 500 pixels à esquerda (pois estaria aplicando 500px de espaçamento ao lado direito do paragrafo) "right -500 está levando para a direita".*/
+		}
+
+		.relative3{
+			border: 1px solid red;
+			position: relative; 
+			top: -100px;	
+			left: -50px;	
+
+		</style>
+
+		</head>
+
+
+		<body>
+
+		<div id="container">
+
+			<h1>Posicionamentos</h1>
+			<p>P1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+			<p class="relative">P2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+			<p>P3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+			<p>P3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+			<p class="relative2">P4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+			<p>P5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+			<p class="relative3">P6 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+		</div>
+
+		</body>
+
+</html>

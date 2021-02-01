@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+
+
+
+	<head>
+
+		<title>Meu site</title>
+		<meta charset="utf-8">
+
+	</head>
+
+	<body>
+
+		<h2>Login</h2>
+
+		<form>
+				
+				Login:<br>
+				<input type="text" name="Login"><br><!--Input quer dizer entrada-->
+				Senha:<br>
+				<input type="password" name="Senha"><br><!--O tipo de entrada "password" camufla os dados em asteriscos-->
+				<input type="submit" value="Logar"><!--Submit quer dizer "Enviar"-->
+
+		</form>
+
+		<h2>Cadastre-se</h2>
+
+			<form>
+
+				Login:<br>
+				<input type="text" name=""><br>
+				Sexo:<br><br>
+				<input type="radio" name="Sexo" value="M"> Masculino<br><!--A especificação de name="Sexo" nas opções foi dada para que não seja marcada mais do que uma opção-->
+				<input type="radio" name="Sexo" value="F"> Feminino<br><br><!--O value="F" foi implementado para que a linguagem de programação receba o valor da escolha do usuário no backend-->
+
+				Interesses:<br>
+				<input type="checkbox" name="interesses">Futebol<br>
+				<input type="checkbox" name="interesses">Cursos<br>
+				<input type="checkbox" name="interesses">Moda<br>
+				<br>
+
+				Estado:<br>
+				<select name="Estado"><!--Select é uma seleção baseada em uma lista de opções e é usada quando há um grande número de opções para seleção de apenas um item-->
+					
+					<option value="Sp">SP</option><!--Option é a tag usada para a criação das opções-->
+					<option value="Mg">MG</option>
+					<option value="Rj">RJ</option>
+					<option value="Rs">RS</option>
+
+				</select><br><br>
+
+				Observações:<br>
+				<textarea>
+					
+				</textarea><br><br>
+
+				<input type="submit" value="Cadastrar">
+
+		</form>
+
+	</body>
+
+
+
+</html>

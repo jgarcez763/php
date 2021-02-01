@@ -1,0 +1,18 @@
+	.texto01{
+			color: red;
+			background: orange;
+		}
+
+	.texto02{
+			background-color: #f2f3f4;
+			color: green;
+			text-align: center;
+		}
+
+	.fundo01{
+		background-image: url('imagens/yoshi.png');
+		background-color: #f2f2f2;
+		background-repeat: repeat-x;
+		background-position: center center;
+		background-attachment: fixed;
+		}

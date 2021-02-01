@@ -1,0 +1,40 @@
+/*Conteúdo da Caixa*/
+.Conteudo{
+	border: 1px solid red;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	width: 150px;
+}
+
+.Conteudo02{
+	border: 1px solid blue;
+	padding: 20px 15px 10px 5px; 
+	width: 150px;
+}
+
+.Conteudo03{
+	border: 1px solid red;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	width: 150px;
+}
+
+.Conteudo04{
+	border: 1px solid blue;
+	margin: 20px 15px 10px 5px; 
+	width: 150px;
+}
+
+#Noticia{
+	background: blue;
+	border: 1px solid gray;
+	padding: 10px;
+}
+
+h2{
+	margin-top: 0px;
+}

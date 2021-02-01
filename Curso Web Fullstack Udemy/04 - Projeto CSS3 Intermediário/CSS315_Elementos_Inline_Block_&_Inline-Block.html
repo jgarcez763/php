@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html>
+
+		<head>
+		
+		<title>Elementos Inline, Block e Inline-block</title> 
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+		.border{
+			border: 1px solid red;
+		}		
+
+
+		.border2{
+			border: 1px solid red;
+			display: inline;
+		}		
+
+		.border3{
+			border: 1px solid red;
+			display: block;
+		}
+
+		.border4{
+			border: 1px solid red;
+			display: inline-block;
+		}
+
+		</style>
+
+		</head>
+
+		<body>
+		<!--Estes elementos são do tipo block, pois ocupam todo o espaçamento de tela e ficam um abaixo do outro-->	
+		<h1>Elementos em Block</h1>
+
+		<p>h1, h2, h3, h4... São exemplos de elementos in block</p>
+		<h2 class="border">Inblock 1</h2>
+		<h2 class="border">Inblock 2</h2>
+
+		<p>Div's são exemplos de elementos in blocks</p>
+		<div class="border">Inblock 3</div>
+		<div class="border">Inblock 4</div>
+
+		<!--Estes elementos são do tipo inline, pois o espaçamento é definido pelo seu conteúdo e ficam um ao lado do outro-->	
+		<h1>Elementos Inline</h1>
+
+		<p>Estes são elementos h2 que são in blocks, mas que estão sob o comando "display: inline;" na class="border2" em seu h2</p>
+		<h2 class="border2">Inline 1</h2>
+		<h2 class="border2">Inline 2</h2>
+		
+		<br><br>
+
+		<p>Span's são exemplos de elementos do tipo inline</p>
+		<span class="border">Inline 3</span>
+		<span class="border">Inline 4</span>
+		
+		<br><br>
+
+		<p>Estes span's estão no formato in block devido ao comando "display: block" na "class="border3""</p>
+		<span class="border3">Inblock 5</span>
+		<span class="border3">Inblock 6</span>
+
+		<h1>Elementos Inline-block's</h1>
+
+		<h2>Com o uso do comando Inline-block na classe</h2>
+
+		<p>Estes Span's estão no formato inline-block, os elementos ficam um ao lado do outro até que o conteúdo force o outro elemento a descer pela falta de espaço.</p>
+		<span class="border4">Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1</span>
+
+		<span class="border4">Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2</span>
+		
+		<h2>Sem o uso do comando Inline-block na classe</h2>
+
+		<p>Estes Conteúdo está sem o comando inline-block em sua classe</p>
+		<span class="border2">Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1 - Inline-block Teste 1</span>
+
+		<span class="border2">Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2 - Inline-block Teste 2</span>
+		
+		<h1>Fim Conteúdo</h1>
+
+		</body>
+
+</html>

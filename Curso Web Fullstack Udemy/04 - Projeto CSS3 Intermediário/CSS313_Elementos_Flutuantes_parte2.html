@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html>
+
+		<head>
+		
+		<title>Elementos Flutuantes</title> 
+		<meta charset="utf-8">
+		<style type="text/css">/*Estilo CSS inline*/
+			
+	
+			.conteudo{
+				background: blue;
+				border: 1px solid gray;
+				width: 150px;
+				height: 150px;
+				margin: 0px 10px;
+				float: left;
+			}
+
+			.conteudofloatleft{
+				background: purple;
+				border: 1px solid gray;
+				width: 150px;
+				height: 150px;
+				float: left;
+			}
+
+			.conteudofloatright{
+				background: navy;
+				border: 1px solid gray;
+				width: 150px;
+				height: 150px;
+				float: right;
+				margin: 10px;
+			}
+
+			.clear{
+				clear: both; /*É possível aplicar 4 atributos em clear: right, left, none e both, para limpar o float na direita, esquerda, nada e ambos.*/
+			}
+
+		/*Comentário CSS3*/		
+
+		</style>
+
+		</head>
+
+
+		<body>
+		
+		<div align="center">
+				
+				<a href="CSS313_Elementos_Flutuantes.html">Elementos Flutuantes</a>&nbsp;|&nbsp;
+				<a href="CSS313_Elementos_Flutuantes_parte2.html">Elementos Flutuantes Pt 2</a>&nbsp;|&nbsp;
+				<a href="CSS313_Elementos_Flutuantes_parte3.html">Elementos Flutuantes Pt 3</a>
+
+			</div><br>
+
+			<h1 align="center">Utilização do Clear</h1>
+
+		<div class="conteudo">
+		Conteúdo01
+		</div>
+
+		<div class="conteudo">
+		Conteúdo02
+		</div>
+
+		<div class="conteudo">
+		Conteúdo03
+		</div>
+
+		<div class="conteudofloatright">
+		Conteúdo01
+		</div>
+
+		<div class="conteudofloatright">
+		Conteúdo02
+		</div>
+
+		<div class="conteudofloatright">
+		Conteúdo03
+		</div>
+
+		<p class="clear"><!--O clear limpa o fluxo do float e faz com que o texto seja direcionado para o fluxo correto.-->Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+		<div class="conteudofloatleft">
+		Conteúdo01
+		</div>
+
+		<div class="conteudofloatleft">
+		Conteúdo02
+		</div>
+
+		<div class="conteudofloatleft">
+		Conteúdo03
+		</div>
+
+		<div class="conteudofloatright">
+		Conteúdo01
+		</div>
+
+		<div class="conteudofloatright">
+		Conteúdo02
+		</div>
+
+		<div class="conteudofloatright">
+		Conteúdo03
+		</div>
+
+		</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+
+		<head>
+		
+		<title>Cor e Imagem de Fundo</title> 
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+		/*Comentário CSS3*/		
+
+		.fundo_com_letra_branca{
+			background-color: orange;
+			color: white;
+		}
+
+		.fundo_com_imagem{
+			background-image: url('imagens/yoshi.png');/*Coment01 - Quando a imagem não tem tamanho suficiente para preencher toda a tela do navegador, ela é replicada tanto na horizontal, quanto na vertical*/
+			background-repeat: repeat-x;/*Coment02 - O Comando background-repeat, irá alterar como a iagem de fundo será repetida, ou não repetida com o comando "no-repeat" em "repeat-x" a imagem será repetida apenas no eixo horizontal.*/ 
+			background-attachment: fixed;/*Coment03 - No comando "background-attachment: fixed" a imagem permanecerá fixa quando a página for rolada para baixo/cima, existe tbm o comando "scroll" onde a imagem acompanha o rolamento da página.*/
+			background-position: left center;/*Este comando manipula a posição da imagem, onde: O primeiro valor será feito no alinhamento horizontal e o segundo valor na vertical, os valores a serem aplicados são: Horizontal: left, center e right; Na vertical são: top, center e bottom*/
+		}
+
+		.fundo_tudo_em_um_background{
+			background: blue url('imagens/yoshi.png') no-repeat fixed left center;
+		}/*É possível criar todos os parâmetros do background apenas no seu corpo*/
+
+		</style>
+
+		</head>
+
+
+		<body class="fundo_tudo_em_um_background">
+
+			<h1 align="center" class="fundo_com_letra_branca">Um texto qualquer para exemplo</h1>
+			
+				<p style="color: green;">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+			</p>
+			
+			<p style="color: green;">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+				
+			</p>
+
+		</body>
+
+</html>
