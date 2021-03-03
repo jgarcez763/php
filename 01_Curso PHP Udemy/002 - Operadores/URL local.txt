@@ -1,0 +1,1 @@
+http://localhost/Curso%20PHP%20Udemy/002%20-%20Operadores/exemplo06.php
